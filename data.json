@@ -1,274 +1,170 @@
 {
   "meta": {
     "title": "Maldives — Key Statistics",
-    "subtitle": "Verified statistics at a glance — showing how Maldives’ tiny land base, dispersed island geography, tourism-led economy and climate exposure shape national vulnerability.",
-    "governmentLabel": "Government of Maldives",
-    "lastUpdated": "3 October 2026 · first draft"
+    "subtitle": "A small, fragmented island state with strong human development, a tourism- and import-dependent economy, high debt exposure, and exceptional vulnerability to sea-level rise and coastal hazards.",
+    "lastUpdated": "3 October 2026",
+    "indicatorThemes": 12
   },
-  "sources": [
-    "Maldives Bureau of Statistics",
-    "Government of Maldives — Ministry of Finance and Public Enterprises",
-    "Government of Maldives — Ministry of Tourism and Environment",
-    "Maldives Customs Service / Ministry of Tourism"
-  ],
-  "social": {
-    "tag": "A small population spread across many islands",
-    "strap": "A population concentrated in Malé, but communities and services remain dispersed across a fragmented archipelago.",
-    "cards": [
-      {
-        "icon": "👥",
-        "label": "Resident population",
-        "value": "515,132",
-        "period": "2022 Population and Housing Census",
-        "source": "Maldives Bureau of Statistics — Census 2022",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2024/07/WPD-2024-Revised.pdf"
-      },
-      {
-        "icon": "📍",
-        "label": "Population in Malé",
-        "value": "211,908",
-        "period": "41% of resident population · 2022",
-        "source": "Maldives Bureau of Statistics — World Population Day 2024",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2024/07/WPD-2024-Revised.pdf"
-      },
-      {
-        "icon": "🏝",
-        "label": "Inhabited islands",
-        "value": "187",
-        "period": "Key geographical facts · 2024",
-        "source": "Maldives Bureau of Statistics — Statistical Pocketbook 2024",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2025/10/Statistical-Pocketbook-of-Maldives-2024-edited-08.10.2025.pdf"
-      },
-      {
-        "icon": "◌",
-        "label": "Very small island communities",
-        "value": "21.4%",
-        "period": "Share of inhabited islands with fewer than 500 people · Census 2022",
-        "source": "Maldives Bureau of Statistics — Statistical Pocketbook 2023",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/nbs/wp-content/uploads/2023/10/Statistical-Pocketbook-of-Maldives-2023-Final.pdf"
-      },
-      {
-        "icon": "🌐",
-        "label": "Resident foreign population",
-        "value": "132,493",
-        "period": "26% of resident population · 2022",
-        "source": "Maldives Bureau of Statistics — Census 2022",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2024/07/WPD-2024-Revised.pdf"
-      }
-    ],
-    "chart": {
-      "title": "Where Maldives’ population lives",
-      "subtitle": "Resident population · Census 2022 · Malé compared with the rest of Maldives",
-      "series": [
+  "sections": [
+    {
+      "id": "social",
+      "title": "SOCIAL",
+      "strap": "Strong human development, but an extraordinary settlement geography: many islands, very high concentration in Malé, and small communities spread across the archipelago.",
+      "cards": [
         {
-          "label": "Malé",
-          "value": 211908,
-          "display": "211,908 · 41%"
+          "label": "Total islands",
+          "value": "1,192",
+          "subtitle": "187 inhabited islands",
+          "icon": "🏝️",
+          "source": "Maldives Bureau of Statistics — Statistical Pocketbook 2024",
+          "url": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2024/10/Statistical-Pocketbook-of-Maldives-2024.pdf"
         },
         {
-          "label": "Rest of Maldives",
-          "value": 303224,
-          "display": "303,224 · 59%"
+          "label": "Malé population density",
+          "value": "659.7",
+          "unit": "people per hectare",
+          "subtitle": "137,238 residents on 208.03 ha · Census 2022",
+          "icon": "🏙️",
+          "source": "Maldives Bureau of Statistics — Statistical Yearbook 2026, Table 1.5",
+          "url": "https://statisticsmaldives.gov.mv/yearbook/2026/wp-content/uploads/sites/13/2026/05/1.5.pdf"
+        },
+        {
+          "label": "Dhivehi literacy",
+          "value": "98.6%",
+          "subtitle": "Resident Maldivians aged 10+ · Census 2022",
+          "icon": "📚",
+          "source": "Maldives Bureau of Statistics — Education, Census 2022",
+          "url": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2025/05/Edu_Census_2022_12525.pdf"
+        }
+      ],
+      "charts": [
+        {
+          "type": "donut",
+          "title": "Population concentration",
+          "subtitle": "Resident population · Census 2022",
+          "segments": [
+            {"label":"Malé","value":211908,"display":"211,908 · 41%"},
+            {"label":"Rest of Maldives","value":303224,"display":"303,224 · 59%"}
+          ],
+          "source": "Maldives Bureau of Statistics — Census 2022 / World Population Day 2024",
+          "url": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2024/07/WPD-2024-Revised.pdf"
         }
       ]
     },
-    "snapshot": {
-      "title": "Social snapshot",
-      "subtitle": "Concentration and dispersion exist at the same time.",
-      "lines": [
+    {
+      "id": "economic",
+      "title": "ECONOMIC",
+      "strap": "Maldives earns heavily from global tourism while depending on imported goods, food and fuel. High public debt adds another layer of exposure to external shocks.",
+      "cards": [
         {
-          "head": "515,132 residents",
-          "text": "were recorded in the 2022 Population and Housing Census."
+          "label": "Tourism share of GDP",
+          "value": "20.3%",
+          "subtitle": "Current-price GDP · 2024",
+          "icon": "✈️",
+          "source": "Maldives Bureau of Statistics — Statistical Yearbook 2026, Table 16.6",
+          "url": "https://statisticsmaldives.gov.mv/yearbook/2026/wp-content/uploads/sites/13/2026/04/16.6.pdf"
         },
         {
-          "head": "41%",
-          "text": "of residents were in Malé, including Hulhumalé, Villimalé and Hulhulé."
+          "label": "Staple-food reserve",
+          "value": "2–3",
+          "unit": "months",
+          "subtitle": "Supply supported by three storage and distribution centres",
+          "icon": "🍚",
+          "source": "Government of Maldives — First Biennial Transparency Report, 2024",
+          "url": "https://www.environment.gov.mv/v2/wp-content/files/publications/20241117-pub-maldives-first-biennial-transparency-report.pdf"
         },
         {
-          "head": "187 inhabited islands",
-          "text": "illustrate the challenge of providing services across a fragmented archipelago."
+          "label": "Fossil-fuel import expense",
+          "value": "13.5%",
+          "subtitle": "of GDP · 2023",
+          "icon": "⛽",
+          "source": "Government of Maldives — Energy Roadmap 2024–2033",
+          "url": "https://www.environment.gov.mv/v2/wp-content/files/publications/20241115-pub-energy-roadmap-maldives-2024-2033.pdf"
         },
         {
-          "head": "21.4% of inhabited islands",
-          "text": "had fewer than 500 people in Census 2022."
+          "label": "Public & publicly guaranteed debt",
+          "value": "133.1%",
+          "subtitle": "of GDP · end-2025",
+          "icon": "💳",
+          "source": "Ministry of Finance and Public Enterprises — Annual Debt Report 2025",
+          "url": "https://www.finance.gov.mv/public/attachments/l2cevipZjSDuqaLOy8pJVd6tkKgYKS075wlUwJjP.pdf"
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Merchandise trade imbalance",
+          "subtitle": "2024 merchandise trade · US$ million",
+          "items": [
+            {"label":"Imports","value":3635.337,"display":"US$3.64bn"},
+            {"label":"Exports","value":91.322,"display":"US$91.3m"}
+          ],
+          "source": "Maldives Bureau of Statistics / Maldives Customs Service — Statistical Yearbook 2025",
+          "url": "https://statisticsmaldives.gov.mv/yearbook/2025/"
+        },
+        {
+          "type": "donut",
+          "title": "PPG debt by source",
+          "subtitle": "End-2025 · domestic vs external",
+          "segments": [
+            {"label":"Domestic","value":59.2,"display":"59.2%"},
+            {"label":"External","value":40.8,"display":"40.8%"}
+          ],
+          "source": "Ministry of Finance and Public Enterprises — Annual Debt Report 2025",
+          "url": "https://www.finance.gov.mv/public/attachments/l2cevipZjSDuqaLOy8pJVd6tkKgYKS075wlUwJjP.pdf"
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "title": "ENVIRONMENTAL",
+      "strap": "The Maldives combines a tiny land base with a vast ocean territory, while homes, infrastructure and economic assets sit extremely close to the sea.",
+      "cards": [
+        {
+          "label": "Land below 1 metre",
+          "value": ">80%",
+          "subtitle": "Share of total land area below 1 m above mean sea level",
+          "icon": "🌊",
+          "source": "Government of Maldives — First Biennial Transparency Report, 2024",
+          "url": "https://www.environment.gov.mv/v2/wp-content/files/publications/20241117-pub-maldives-first-biennial-transparency-report.pdf"
+        },
+        {
+          "label": "Inhabited islands facing severe erosion",
+          "value": ">60%",
+          "subtitle": "Reported severe beach erosion",
+          "icon": "≈",
+          "source": "Government of Maldives — First Biennial Transparency Report, 2024",
+          "url": "https://www.environment.gov.mv/v2/wp-content/files/publications/20241117-pub-maldives-first-biennial-transparency-report.pdf"
+        }
+      ],
+      "charts": [
+        {
+          "type": "compare",
+          "title": "Tiny land, vast ocean",
+          "subtitle": "The defining geographic contrast",
+          "items": [
+            {"label":"Land area","value":"~300 km²"},
+            {"label":"Exclusive Economic Zone","value":"859,000 km²"}
+          ],
+          "source": "Maldives Bureau of Statistics / Government of Maldives",
+          "url": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2024/10/Statistical-Pocketbook-of-Maldives-2024.pdf"
+        },
+        {
+          "type": "bar",
+          "title": "Exposure within 100 metres of the coast",
+          "subtitle": "Selected people, housing and infrastructure exposure",
+          "items": [
+            {"label":"Population","value":42,"display":"42%"},
+            {"label":"Housing structures","value":47,"display":"47%"},
+            {"label":"Fisheries infrastructure","value":70,"display":"~70%"},
+            {"label":"Communications infrastructure","value":75,"display":">75%"},
+            {"label":"Resort infrastructure","value":90,"display":">90%"},
+            {"label":"Tourist accommodation","value":99,"display":"99%"}
+          ],
+          "source": "Government of Maldives — climate vulnerability reporting",
+          "url": "https://www.environment.gov.mv/v2/wp-content/files/publications/20241117-pub-maldives-first-biennial-transparency-report.pdf"
         }
       ]
     }
-  },
-  "economic": {
-    "tag": "A tourism-led and import-dependent island economy",
-    "strap": "Large visitor flows and heavy merchandise imports sit alongside high public debt and exposure to external shocks.",
-    "cards": [
-      {
-        "icon": "✈",
-        "label": "Tourist arrivals",
-        "value": "2.05m",
-        "period": "2,046,615 visitors · 2024",
-        "source": "Maldives Bureau of Statistics / Ministry of Tourism",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/yearbook/2025/wp-content/uploads/sites/12/2025/06/10.1.pdf"
-      },
-      {
-        "icon": "🛏",
-        "label": "Registered tourism bed capacity",
-        "value": "63,970",
-        "period": "2024",
-        "source": "Maldives Bureau of Statistics — World Tourism Day 2025",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2025/10/WTD-2025.pdf"
-      },
-      {
-        "icon": "⇩",
-        "label": "Merchandise imports",
-        "value": "US$3.64bn",
-        "period": "2024",
-        "source": "Maldives Bureau of Statistics / Maldives Customs Service",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/yearbook/statisticalarchive/wp-content/uploads/sites/3/2025/06/14.1.pdf"
-      },
-      {
-        "icon": "⇧",
-        "label": "Merchandise exports",
-        "value": "US$91.3m",
-        "period": "2024",
-        "source": "Maldives Bureau of Statistics / Maldives Customs Service",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/yearbook/statisticalarchive/wp-content/uploads/sites/3/2025/06/14.1.pdf"
-      },
-      {
-        "icon": "⚖",
-        "label": "Imports relative to exports",
-        "value": "39.8×",
-        "period": "Merchandise imports were nearly 40 times exports · 2024",
-        "source": "Calculated from official Maldives merchandise trade totals",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/yearbook/statisticalarchive/wp-content/uploads/sites/3/2025/06/14.1.pdf"
-      },
-      {
-        "icon": "▣",
-        "label": "Public & publicly guaranteed debt",
-        "value": "133.1%",
-        "period": "of GDP · end-2025",
-        "source": "Ministry of Finance and Public Enterprises — Annual Debt Report 2025",
-        "sourceUrl": "https://www.finance.gov.mv/public/attachments/l2cevipZjSDuqaLOy8pJVd6tkKgYKS075wlUwJjP.pdf"
-      }
-    ],
-    "charts": [
-      {
-        "title": "Merchandise trade structure",
-        "subtitle": "Imports and exports · US$ million · 2024",
-        "centerText": "Trade",
-        "series": [
-          {
-            "label": "Imports",
-            "value": 3635.337,
-            "display": "US$3.64bn"
-          },
-          {
-            "label": "Exports",
-            "value": 91.322,
-            "display": "US$91.3m"
-          }
-        ]
-      }
-    ],
-    "inflationChart": {
-      "title": "Tourist arrivals",
-      "subtitle": "Annual tourist arrivals · 2019–2024",
-      "source": "Maldives Bureau of Statistics / Ministry of Tourism",
-      "sourceUrl": "https://statisticsmaldives.gov.mv/yearbook/2025/wp-content/uploads/sites/12/2025/06/10.1.pdf",
-      "suffix": "",
-      "series": [
-        {
-          "label": "2019",
-          "value": 1702887
-        },
-        {
-          "label": "2020",
-          "value": 555494
-        },
-        {
-          "label": "2021",
-          "value": 1321937
-        },
-        {
-          "label": "2022",
-          "value": 1675303
-        },
-        {
-          "label": "2023",
-          "value": 1878543
-        },
-        {
-          "label": "2024",
-          "value": 2046615
-        }
-      ]
-    },
-    "debtChart": {
-      "title": "Public debt exposure",
-      "subtitle": "Public and publicly guaranteed debt · % of GDP",
-      "source": "Government of Maldives — Ministry of Finance and Public Enterprises",
-      "sourceUrl": "https://www.finance.gov.mv/public/attachments/l2cevipZjSDuqaLOy8pJVd6tkKgYKS075wlUwJjP.pdf",
-      "suffix": "%",
-      "series": [
-        {
-          "label": "2021",
-          "value": 133.4
-        },
-        {
-          "label": "2022",
-          "value": 135.9
-        },
-        {
-          "label": "2023",
-          "value": 122.9
-        },
-        {
-          "label": "2024",
-          "value": 127.6
-        },
-        {
-          "label": "2025",
-          "value": 133.1
-        }
-      ]
-    },
-    "note": "In 2024 Maldives received about 4.0 tourist arrivals for every resident counted in Census 2022. Merchandise imports were about 39.8 times merchandise exports, while public and publicly guaranteed debt stood at 133.1% of GDP at end-2025. Together, these indicators show a highly connected economy that is also exposed to tourism, trade and financing shocks."
-  },
-  "environment": {
-    "tag": "A tiny, low-lying land base inside a vast ocean territory",
-    "strap": "Very little land, an enormous EEZ and direct exposure of settlements and infrastructure to coastal hazards.",
-    "compareStory": "Maldives has only about 300 km² of land but an Exclusive Economic Zone of 859,000 km². It is physically tiny on land but enormous as an ocean state — a defining feature of its economy, geography and vulnerability.",
-    "cards": [
-      {
-        "icon": "🏝",
-        "label": "Land area",
-        "value": "~300 km²",
-        "period": "Approximate total land area",
-        "source": "Government of Maldives — Energy Supply and Demand Study",
-        "sourceUrl": "https://www.environment.gov.mv/v2/wp-content/files/publications/20251001-pub-energy-supply-and-demand-study-for-the-maldives.pdf"
-      },
-      {
-        "icon": "🌊",
-        "label": "Exclusive Economic Zone",
-        "value": "859,000 km²",
-        "period": "Ocean territory",
-        "source": "Maldives Bureau of Statistics — Statistical Pocketbook 2024",
-        "sourceUrl": "https://statisticsmaldives.gov.mv/mbs/wp-content/uploads/2025/10/Statistical-Pocketbook-of-Maldives-2024-edited-08.10.2025.pdf"
-      },
-      {
-        "icon": "↟",
-        "label": "Land below 1 metre",
-        "value": ">80%",
-        "period": "Share of total land area below 1 m above mean sea level",
-        "source": "Government of Maldives — First Biennial Transparency Report / climate vulnerability reporting",
-        "sourceUrl": "https://www.environment.gov.mv/v2/wp-content/files/2024/comments/20241105-pub-maldives-first-btr-to-UNCC-under-paris-agreement-draft.pdf"
-      },
-      {
-        "icon": "≈",
-        "label": "Inhabited islands facing severe erosion",
-        "value": ">60%",
-        "period": "Reported severe beach erosion",
-        "source": "Government of Maldives — First Biennial Transparency Report",
-        "sourceUrl": "https://www.environment.gov.mv/v2/wp-content/files/2024/comments/20241105-pub-maldives-first-btr-to-UNCC-under-paris-agreement-draft.pdf"
-      }
-    ],
-    "note": "Environment at a glance: more than 80% of Maldives’ land is less than one metre above mean sea level, and more than 60% of inhabited islands face severe beach erosion. Government climate reporting also notes that 47% of housing structures — representing 42% of the population — are within 100 metres of the shore. This means climate and coastal risk directly affects homes, infrastructure, tourism and public finances."
-  }
+  ]
 }
