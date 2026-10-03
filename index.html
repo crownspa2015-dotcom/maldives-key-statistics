@@ -12,7 +12,7 @@
 .hero h1{font-size:42px;line-height:1.05;margin:0 0 10px;color:#11225d}.hero p{margin:0;color:#36527c;line-height:1.5}
 .section{padding:14px;border-radius:18px;margin:18px 0}.social{background:var(--social)}.economic{background:var(--economic)}.environment{background:var(--env)}
 .head{display:flex;gap:12px;align-items:center;margin-bottom:12px}.head h2{margin:0;font-size:26px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}.card,.chart{background:#fff;border:1px solid rgba(11,52,112,.08);border-radius:12px;padding:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}.economic-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.card,.chart{background:#fff;border:1px solid rgba(11,52,112,.08);border-radius:12px;padding:14px}.trade-chart{min-height:132px}
 .card{min-height:132px;display:flex;gap:12px}.icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e8f3ff;font-size:23px;flex:0 0 auto}
 .environment .icon{background:#dff4ef}.label{font-size:12.5px;font-weight:700}.value{font-size:28px;font-weight:800;margin:6px 0;line-height:1.05;color:#10245d}.unit{font-size:12px;font-weight:700;color:#45617d}.sub{font-size:12px;color:var(--muted);line-height:1.35}
 .source{font-size:10.5px;line-height:1.25;margin-top:8px}.source a{color:#4b6d97}
@@ -22,7 +22,7 @@
 .bar-list{display:grid;gap:11px}.bar-row{display:grid;grid-template-columns:150px 1fr 80px;gap:10px;align-items:center;font-size:12px}.track{height:18px;background:#edf2f7;border-radius:9px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,#0b72df,#65b5f2);border-radius:9px}.environment .fill{background:linear-gradient(90deg,#168f80,#75cfc2)}.bar-value{text-align:right;font-weight:800}
 .compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}.compare-box{border:1px solid #e2eaf2;border-radius:12px;padding:20px;text-align:center}.compare-box span{font-size:12px;color:#58708d;text-transform:uppercase}.compare-box strong{display:block;font-size:32px;margin-top:8px}
 .footer{font-size:12px;color:#65758e;padding:8px 3px 20px}
-@media(max-width:850px){.hero,.visuals{grid-template-columns:1fr}.head{align-items:flex-start;flex-direction:column}.head p{max-width:none;text-align:left}.donut-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:110px 1fr 68px}.compare{grid-template-columns:1fr}}
+@media(max-width:850px){.hero,.visuals,.economic-row{grid-template-columns:1fr}.head{align-items:flex-start;flex-direction:column}.head p{max-width:none;text-align:left}.donut-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:110px 1fr 68px}.compare{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -50,12 +50,10 @@
     <div class="head">
       <h2>ECONOMIC</h2>
     </div>
-    <div class="cards">
+    <div class="economic-row">
       <div class="card"><div class="icon">✈️</div><div><div class="label">Tourism share of GDP</div><div class="value">20.3%</div><div class="sub">Current-price GDP · 2024</div><div class="source">Source: <a target="_blank" href="https://statisticsmaldives.gov.mv/yearbook/2026/">Statistical Yearbook 2026</a></div></div></div>
       <div class="card"><div class="icon">💳</div><div><div class="label">Public &amp; publicly guaranteed debt</div><div class="value">133.1%</div><div class="sub">of GDP · end-2025</div><div class="source">Source: <a target="_blank" href="https://www.finance.gov.mv/public/attachments/l2cevipZjSDuqaLOy8pJVd6tkKgYKS075wlUwJjP.pdf">Annual Debt Report 2025</a></div></div></div>
-    </div>
-    <div class="visuals">
-      <div class="chart">
+      <div class="chart trade-chart">
         <h3>Merchandise trade imbalance</h3><div class="chart-sub">2024 merchandise trade · US$ million</div>
         <div class="bar-list">
           <div class="bar-row"><span>Imports</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="bar-value">US$3.64bn</span></div>
